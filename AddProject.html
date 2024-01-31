@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Add Project</title>
+    <link rel="stylesheet" href="AddProject.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+
+    <input type="checkbox" id="show" class="show-btn">
+    <label for="show" class="show-btn">Open</label>
+
+    <div class="container">
+        <label for="show" class="close-btn">×</label>
+        <div class="text">Add Project</div>
+        <form id="addProjectForm" enctype="multipart/form-data">
+            <div class="data">
+                <label for="projectName">Project Name:</label>
+                <input type="text" id="projectName" name="projectName" required>
+            </div>
+
+            <div class="data">
+                <label for="technology">Technology:</label>
+                <input type="text" id="technology" name="technology" required>
+            </div>
+
+            <div class="data">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+            </div>
+
+            <div class="data">
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file" accept=".pdf, .doc, .docx">
+            </div>
+
+            <div class="btn">
+                <div class="inner"></div>
+                <button type="button" onclick="addProject()">Add Project</button>
+            </div>
+        </form>
+
+
+    </div>
+
+    <script src="AddProject.js"></script>
+</body>
+</html>
+<!-- D:\lms-main\favicon-32x32.png -->
